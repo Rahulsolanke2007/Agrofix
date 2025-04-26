@@ -1,5 +1,3 @@
-
-
 # 🌟 Green Grocers - Online Store (Admin + Customer)
 
 An online platform to manage and view organic products. Built with:
