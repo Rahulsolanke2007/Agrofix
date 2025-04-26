@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 20 14.3% 4.1%;
+    
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    
+    --primary: 120 40% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 84 40% 55%;
+    --secondary-foreground: 24 9.8% 10%;
+    
+    --accent: 36 100% 50%;
+    --accent-foreground: 24 9.8% 10%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    
+    --ring: 120 40% 45%;
+    
+    --radius: 0.5rem;
+    
+    --chart-1: 120 100% 30%;
+    --chart-2: 84 60% 45%;
+    --chart-3: 36 100% 50%;
+    --chart-4: 199 89% 48%;
+    --chart-5: 0 84% 60%;
+    
+    --sidebar-background: 120 40% 45%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 120 40% 45%;
+    --sidebar-accent: 84 40% 55%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 120 30% 55%;
+    --sidebar-ring: 0 0% 100%;
+  }
+ 
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 98%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
+    
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
+    
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    
+    --primary: 120 40% 40%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 84 40% 40%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --ring: 120 40% 40%;
+    
+    --chart-1: 120 70% 40%;
+    --chart-2: 84 60% 45%;
+    --chart-3: 36 100% 50%;
+    --chart-4: 199 89% 48%;
+    --chart-5: 0 84% 60%;
+    
+    --sidebar-background: 120 30% 30%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 120 30% 30%;
+    --sidebar-accent: 84 40% 40%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 120 20% 40%;
+    --sidebar-ring: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+}
+
+@layer utilities {
+  .sidebar-item {
+    @apply flex items-center px-4 py-3 text-sidebar-foreground rounded-lg mb-1 transition-colors;
+  }
+  
+  .sidebar-item:hover {
+    @apply bg-white/10;
+  }
+  
+  .sidebar-item:hover .sidebar-icon {
+    @apply text-sidebar-primary;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-white/10 border-l-4 border-sidebar-primary;
+  }
+  
+  .sidebar-item.active .sidebar-icon {
+    @apply text-sidebar-primary;
+  }
+  
+  .sidebar-icon {
+    @apply mr-3 text-lg;
+  }
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVI.woff2) format('woff2');
+}
