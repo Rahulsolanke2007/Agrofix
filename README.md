@@ -152,7 +152,3 @@ This project is licensed under the [MIT License](LICENSE).
 You’re ready to **run**, **test**, and **deploy** your application easily.
 
 ---
-
-Would you also like me to create a **`package.json` scripts section** that helps auto-run both backend and frontend together for local dev?  
-👉 Like with `concurrently` or a single `npm run dev` command? 🚀  
-(Just say yes if you want!)
