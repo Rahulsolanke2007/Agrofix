@@ -2,7 +2,7 @@
 
 An online platform to manage and view organic products. Built with:
 
-- **Next.js** (Frontend)
+- **TypeScript** (Frontend)
 - **Express.js** (Backend API)
 - **PostgreSQL** (Hosted on [Neon](https://neon.tech))
 - **Render** (For Deployment)
@@ -31,7 +31,7 @@ An online platform to manage and view organic products. Built with:
 
 ## 🛠 Tech Stack
 
-- **Frontend**: Next.js, TailwindCSS
+- **Frontend**: TypeScript, TailwindCSS
 - **Backend**: Node.js, Express.js
 - **Database**: PostgreSQL (Neon)
 - **ORM/Query Builder**: drizzle-orm (or knex etc.)
